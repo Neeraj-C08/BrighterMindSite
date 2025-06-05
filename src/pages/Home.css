@@ -59,3 +59,123 @@
     background: white;
   }
   
+  /* New intro section styles */
+.intro-section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F0FFF1;
+}
+
+.intro-title {
+  font-size: 32px;
+  color: #8367C7;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Features section styles */
+.features-section {
+  padding: 80px 40px;
+  background-color: #ffffff;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #F0FFF1;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(131, 103, 199, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(131, 103, 199, 0.2);
+  border-color: #C2F8CB;
+}
+
+.feature-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #C2F8CB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.feature-title {
+  font-size: 22px;
+  color: #8367C7;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feature-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 40px 20px;
+  }
+  
+  .intro-title {
+    font-size: 28px;
+  }
+  
+  .intro-text {
+    font-size: 16px;
+  }
+  
+  .features-section {
+    padding: 60px 20px;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .slide-title {
+    font-size: 32px;
+    left: 20px;
+    bottom: 20px;
+  }
+}
